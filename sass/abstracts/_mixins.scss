@@ -1,0 +1,22 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+
+    }
+}
+
+@mixin breakpoint($point) {
+    @if $point==untilTablet {
+        @media (max-width: $tablet - 1) {
+            @content;
+        }
+    }
+
+    @else if $point==tablet {
+        @media (min-width: $tablet) {
+            @content;
+        }
+    }
+}
