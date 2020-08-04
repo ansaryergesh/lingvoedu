@@ -78,7 +78,7 @@ label {
       border-bottom: 1.5px solid black; }
   .loginform .input-group {
     position: relative;
-    width: 450px;
+    width: 100%;
     font-size: 2rem;
     height: 44px;
     line-height: 80px;
@@ -148,7 +148,7 @@ label {
     vertical-align: super; }
   .login-img {
     position: relative;
-    background: url(../img/image10.png);
+    background: url(../img/image17.png);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -175,6 +175,8 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: start; }
+  .loginform {
+    width: 65%; }
   .input-group {
     position: relative; }
   .loginform,
