@@ -34,8 +34,8 @@ p {
   display: none; }
 
 .login-form {
-  height: 100vh;
-  min-width: 50%;
+  height: 500px;
+  min-width: 45%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -155,7 +155,7 @@ label {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    min-width: 50%; }
+    min-width: 55%; }
     .login-img h1 {
       position: absolute;
       top: 70px;
@@ -169,7 +169,7 @@ label {
     margin: 0; }
   .login-form {
     height: 100vh;
-    min-width: 50%;
+    min-width: 45%;
     margin: auto;
     display: flex;
     flex-direction: column;
