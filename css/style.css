@@ -34,7 +34,7 @@ p {
   display: none; }
 
 .login-form {
-  height: 800px;
+  height: 120vh;
   min-width: 45%;
   margin: auto;
   display: flex;
