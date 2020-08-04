@@ -34,7 +34,7 @@ p {
   display: none; }
 
 .login-form {
-  min-width: 45%;
+  min-width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
