@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting-cells.css"
+    />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <section class="login-page">
-    <div class="logo">
-      <img src="img/logo.png" alt="logo" class="logo">
-    </div>
-    <div class="login-form">
-      <h3 class='login-header'>Вход в личный аккаунт</h3>
-
-      <form class='loginform'>
-        <div class='input-group'>
-          <input type="text" id="email" name="email" required>
-          <label for="email">Email</label>
-        </div>
-        <div class='input-group'>
-          <input type="password" id="password" name="password" required>
-          <label for="password">Password</label>
-        </div>
-
-        <button class="loginform--button">Войти</button>
-      </form>
-
-      <div class="text-info">
-        <a href="#">Забыли пароль?</a>
-        <p>Впервые на Lingvoedu? <a href="#">Зарегистрируйтесь</a></p>
+  <body>
+    <section class="login-page">
+      <div class="logo">
+        <img src="img/logo.png" alt="logo" class="logo" />
       </div>
-    </div>
-    <div class="login-img">
-      <h1>Lingvo</h1>
-    </div>
-  </section>
-</body>
+      <div class="login-form">
+        <h3 class="login-header">Вход в личный аккаунт</h3>
 
+        <form class="loginform">
+          <div class="input-group">
+            <input type="text" id="email" name="email" required />
+            <label for="email">Email</label>
+          </div>
+          <div class="input-group">
+            <input type="password" id="password" name="password" required />
+            <label for="password">Password</label>
+          </div>
+
+          <button class="loginform--button">Войти</button>
+        </form>
+
+        <div class="text-info">
+          <a href="#">Забыли пароль?</a>
+          <p>Впервые на Lingvoedu? <a href="#">Зарегистрируйтесь</a></p>
+        </div>
+      </div>
+      <div class="login-img">
+        <h1 data-splitting>Lingvo</h1>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

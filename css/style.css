@@ -30,6 +30,10 @@ p {
 .login-page {
   display: flex; }
 
+.splitting .char {
+  animation: slide-in 0.7s cubic-bezier(0.3, 0, 0.7, 1) both;
+  animation-delay: calc(50ms * var(--char-index)); }
+
 .login-img {
   display: none; }
 
@@ -40,7 +44,10 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
 
 .login-form p {
   font-size: 1.8rem; }
@@ -71,7 +78,7 @@ label {
     font-size: 1.9rem;
     text-align: left;
     padding: 5px;
-    transition: all .3s;
+    transition: all 0.3s;
     width: 65px;
     border-bottom: 1.5px solid transparent; }
     .loginform--button:active, .loginform--button:hover {
@@ -88,7 +95,7 @@ label {
       border: 0;
       outline: 0;
       padding: 0.9rem 0;
-      border-bottom: 2px solid #A7A7A7;
+      border-bottom: 2px solid #a7a7a7;
       box-shadow: none;
       transition: all 0.3s;
       font-size: 1.8rem; }
@@ -121,14 +128,17 @@ label {
 .text-info a {
   color: black;
   text-decoration: none;
-  transition: color ease-in .3s; }
+  transition: color ease-in 0.3s; }
 
 .logo {
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  animation-name: moveInBottom;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out; }
 
 .text-info a:active,
 .text-info a:hover {
@@ -148,7 +158,7 @@ label {
     vertical-align: super; }
   .login-img {
     position: relative;
-    background: url(../img/image17.png);
+    background-image: url(../img/image17.png);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -184,3 +194,36 @@ label {
     margin-left: 16px; }
   .text-info {
     text-align: left; } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes slide-in {
+  from {
+    transform: scale(0.4) translateY(80%);
+    opacity: 0; } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
